@@ -7,9 +7,9 @@ import redis
 # Create your views here.
 def redis_view(request):
     cache.set('foo', 'bar')
-    redis = redis.Redis(
-        host='localhost',
-        port='6379')
-
-    redis.set('mykey', 'Hello from Python!')
+    ################### or >
+    # redis = redis.Redis(
+    #     host='localhost',
+    #     port='6379')
+    # redis.set('mykey', 'Hello from Python!')
     return HttpResponse("hi")

@@ -29,7 +29,5 @@ services:
       - project_network
 volumes:
   redisdata:
-#
-#
 networks:
   project_network:
